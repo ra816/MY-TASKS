@@ -1,0 +1,38 @@
+{% extends 'todos/base.html' %}
+{% block title %}{{ title }} - TaskFlow{% endblock %}
+{% block content %}
+<div class="form-card">
+    <h3 class="mb-4">{{ title }}</h3>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            {{ form.title }}
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            {{ form.description }}
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Category</label>
+                {{ form.category }}
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Priority</label>
+                {{ form.priority }}
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Due Date & Time</label>
+            {{ form.due_date }}
+        </div>
+        <div class="form-check mb-3">
+            {{ form.completed }}
+            <label class="form-check-label">Mark as Completed</label>
+        </div>
+        <button type="submit" class="btn btn-primary-custom">Save Task</button>
+        <a href="{% url 'todo_list' %}" class="btn btn-outline-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}
