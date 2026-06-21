@@ -124,4 +124,8 @@ A fully functional multi-user Todo web application with secure login, categorize
 This project demonstrates a complete full-stack Python web application using Django's MVT architecture, covering authentication, relational database design (ForeignKey relationships), form handling, and responsive frontend design — core skills for full-stack Python development.
 
 ## 👨‍💻 Author
-CRT 2027 Batch – Mini Project Submission
+K. Ravi Teja (24AK5A0428)
+P. Mani Kumar (24AK5A0417)
+G. P. Ravi Teja (24AK5A0427)
+ 
+
